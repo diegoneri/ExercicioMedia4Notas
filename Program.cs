@@ -18,13 +18,13 @@ namespace ExercicioMedia4Notas
         Console.Write("\nNota 1:");
         nota1 = Convert.ToDecimal(Console.ReadLine());
 
-        Console.Write("\nNota 2:");
+        Console.Write("Nota 2:");
         nota2 = Convert.ToDecimal(Console.ReadLine());
 
-        Console.Write("\nNota 3:");
+        Console.Write("Nota 3:");
         nota3 = Convert.ToDecimal(Console.ReadLine());
 
-        Console.Write("\nNota 4:");
+        Console.Write("Nota 4:");
         nota4 = Convert.ToDecimal(Console.ReadLine());
 
         Resultado = (nota1 + nota2 + nota3 + nota4) / 4;
@@ -35,16 +35,21 @@ namespace ExercicioMedia4Notas
             Environment.Exit(-1);
         }
         
-        if (Resultado >= 5)
+        if (Resultado >= 6)
         {
          Console.WriteLine($"\nVocê ficou com média {Resultado}. Resultado.: Aprovado ");   
         }
-        else
+        if (Resultado >= 5 && Resultado < 6 )
+        {
+         Console.WriteLine($"\nVocê ficou com média {Resultado}. Resultado.: Recuperação");   
+        }
+        if (Resultado <= 4) 
         {
          Console.WriteLine($"\nVocê ficou com média {Resultado}. Resultado.: Reprovado ");   
         }
         
-
+        Console.WriteLine("\nObrigado por utilizar o programa!");
+        
         }
     }
 }
