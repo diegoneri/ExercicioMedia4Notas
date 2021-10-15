@@ -3,11 +3,11 @@ Receba 4 notas, com somente uma casa decimal. Valide se todas estão entre 0.0 e
 
 Resultados possíveis:
 
-"Reprovado" para médias menores que 5.0
+- "Reprovado" para médias menores que 5.0
 
-"Em recuperação" para médias entre 5.0 e 6.0
+- "Em recuperação" para médias entre 5.0 e 6.0
 
-"Aprovado", para médias acima de 6.0
+- "Aprovado", para médias acima de 6.0
 
 Ex.:
 ````
