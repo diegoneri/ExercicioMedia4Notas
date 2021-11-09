@@ -26,7 +26,7 @@ namespace ExercicioMedia4Notas
       Console.Write("Nota 4: ");
       nota4 = Convert.ToDecimal(Console.ReadLine());
 
-      Decimal Media = MediaConta(nota1, nota2, nota3, nota4);
+
     
         Console.WriteLine("");
 
@@ -36,7 +36,9 @@ namespace ExercicioMedia4Notas
         Console.WriteLine("Digite um numero entre 0 e 10.");
         Environment.Exit(-1);
       }
-
+      
+      Decimal Media = MediaConta(nota1, nota2, nota3, nota4);
+      
       if (Media >= 6)
       {
         Console.WriteLine($"Você ficou com Media: {Media:N1} // Resultado.: Aprovado.");
